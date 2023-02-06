@@ -14,7 +14,12 @@ a{
     color:inherit;
 }
 
-
+h1{
+    font-family: 'League Gothic', sans-serif;
+}
+p{
+    font-family:'Roboto Slab', serif;
+}
 
 
 
@@ -26,3 +31,4 @@ a{
     }
  
 }
+
