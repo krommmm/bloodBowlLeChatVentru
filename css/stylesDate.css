@@ -68,6 +68,7 @@ li a{
     position:relative;
     overflow:hidden;
     margin:10px;
+    transition:2s ease;
 
 }
 .tournoi:hover{
