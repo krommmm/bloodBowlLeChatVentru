@@ -1,0 +1,61 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.presentation_visuelle{
+width:80%;
+margin:auto;
+}
+
+
+
+.presentation_visuelle img{
+    width:100%;
+    height:10vw;
+    object-fit:cover;
+    object-position: 70% 30%;
+}
+
+h1{
+    text-align:center;
+    font-size:50px;
+}
+h2{
+    text-align:center;
+}
+
+li{
+    list-style-type:disc;
+    line-height:35px;
+    font-size:20px;
+}
+li a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.tournois{
+    display:flex;
+    justify-content:center;
+    width:80%;
+    margin:auto;
+}
+
+.tournois img{
+    width:100%;
+    height:30vw;
+    object-fit:cover;
+    object-position:50% 30%;
+}
+
+.commentaires{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.commentaires p{
+    font-size:30px;
+    max-width:60%;
+}
