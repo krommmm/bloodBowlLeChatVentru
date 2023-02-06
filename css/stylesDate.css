@@ -1,96 +1,150 @@
-body{
-    margin:0px;
-    padding:0px;
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
-.presentation_visuelle{
-width:80%;
-margin:auto;
+.presentation_visuelle {
+    width: 80%;
+    margin: auto;
 }
 
 
 
-.presentation_visuelle img{
-    width:100%;
-    height:10vw;
-    object-fit:cover;
+.presentation_visuelle img {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
     object-position: 70% 30%;
 }
 
-h1{
-    text-align:center;
-    font-size:50px;
+h1 {
+    text-align: center;
+    font-size: 50px;
 }
 
-li{
-    list-style-type:disc;
-    line-height:35px;
-    font-size:20px;
-    background: linear-gradient(to left, rgba(0,0,0,.3) 50%, rgba(217, 30, 24) 50%) right;
+li {
+    list-style-type: disc;
+    line-height: 35px;
+    font-size: 20px;
+    background: linear-gradient(to left, rgba(0, 0, 0, .3) 50%, rgba(217, 30, 24) 50%) right;
     background-size: 210%;
     transition: .3s linear;
-    margin:10px;
+    margin: 10px;
     color: black;
-    padding:10px;
-   list-style-type:none;
+    padding: 10px;
+    list-style-type: none;
 
 }
-li:hover{
 
- 
+li:hover {
+
+
     background-position: left;
 }
-li a{
-    color:inherit; 
-    text-decoration:none;
+
+li a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.tournois{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction:column;
+.tournois {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
 }
 
-.tournois li{
-   
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
- box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+.tournois li {
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
-.tournoi{
+
+
+.tournoi {
+
     background-image: url("../assets/wallpapers6.webp");
-    background-repeat:no-repeat;
-    width:20vw;
-    height:100px;
-    padding:10px;
-    background-size:100%;
-    position:relative;
-    overflow:hidden;
-    margin:10px;
-    transition:2s ease;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 10vw;
+    padding: 10px;
+    background-size: 100%;
+    position: relative;
+    margin: 10px;
+    transition: 2s ease
 
 }
-.tournoi:hover{
+
+.tournoi:hover {
     background-size: 110%;
-    transition:2s ease;
-    
+    transition: 2s ease;
+
 }
 
-.tournois p{
- 
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    font-size:20px;
-    background-color:rgba(0,0,0,.7);
-    transition: .3s linear;
-    margin:10px;
-    color: white;
-    padding:10px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font-weight:700;
+.tournois p {
 
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, .7);
+    transition: .3s linear;
+    margin: 10px;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+
+.fa-angles-left {
+    position: absolute;
+    left: 20%;
+    font-size: 30px;
+}
+
+.fa-angles-right {
+    position: absolute;
+    right: 20%;
+    font-size: 30px;
+}
+
+.tournois_container i {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+
+    .tournois_container {
+        overflow:hidden;
+        width: 100%;
+        margin: auto;
+    }
+
+    .tournois {
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+
+    .tournoi {
+        width: 100vw;
+        height: 36vw;
+        margin: auto;
+    }
+
+    .tournois_container i {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:842px){
+    .presentation_visuelle img{
+        width:100%;
+        height:20vw;
+        object-fit:cover;
+        object-position: 70% 30%;
+    }
 }
