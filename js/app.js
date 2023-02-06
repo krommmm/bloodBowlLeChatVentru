@@ -58,3 +58,5 @@ function turnLeft() {
    transfert = compteur * -slidesWidth;
    tournois.style.transform = `translateX(${transfert}px)`;
 }
+
+
