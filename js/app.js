@@ -1,5 +1,7 @@
 //Var globales
-var slidesWidth = document.querySelector('.tournoi').getBoundingClientRect().width;
+var slidesWidth = document
+   .querySelector('.tournoi')
+   .getBoundingClientRect().width;
 var largeurEcran = document.querySelector('html').getBoundingClientRect().width;
 var tournoisContainer = document.querySelector('.tournois_container');
 var tournois = document.querySelector('.tournois');
@@ -49,14 +51,11 @@ function turnLeft() {
    compteur--;
    tournois.style.transition = transition + 'ms linear';
 
-   if(compteur<0){
-    compteur=slides.length-1;
-    tournois.style.transition = 'unset';
-    setTimeout(turnLeft,1);
-
+   if (compteur < 0) {
+      compteur = slides.length - 1;
+      tournois.style.transition = 'unset';
+      setTimeout(turnLeft, 1);
    }
    transfert = compteur * -slidesWidth;
    tournois.style.transform = `translateX(${transfert}px)`;
 }
-
-

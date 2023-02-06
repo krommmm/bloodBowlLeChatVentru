@@ -73,7 +73,6 @@ li a {
     position: relative;
     margin: 10px;
     transition: 2s ease
-
 }
 
 .tournoi:hover {
@@ -118,7 +117,7 @@ li a {
 @media screen and (max-width:1024px) {
 
     .tournois_container {
-        overflow:hidden;
+        overflow: hidden;
         width: 100%;
         margin: auto;
     }
@@ -140,11 +139,11 @@ li a {
     }
 }
 
-@media screen and (max-width:842px){
-    .presentation_visuelle img{
-        width:100%;
-        height:20vw;
-        object-fit:cover;
+@media screen and (max-width:842px) {
+    .presentation_visuelle img {
+        width: 100%;
+        height: 20vw;
+        object-fit: cover;
         object-position: 70% 30%;
     }
 }
